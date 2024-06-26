@@ -4,6 +4,7 @@ source $1
 
 function print_error() {
     printf '{"failed": %s, "msg": "%s"}' "$1" "$2"
+    exit 1
 }
 
 function print_status() {
